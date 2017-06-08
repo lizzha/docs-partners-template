@@ -9,8 +9,8 @@ owner: Partners
 
 This is the initial release of Microsoft Azure Log Analytics Nozzle for PCF. Features included in this release:
 
-* Automated configuration for the Microsoft Azure Log Analytics Nozzle
-* Resolved Cloud Foundry application metadata (for example, app name) in logs and metrics
-* Filtering for different types of logs and metrics
-* Additional logging for slow consumer alerts
-* Additional logging for statistics of received, sent and lost events of the nozzle
+* Consume all data from CF Loggregator Firehose, including logs from all apps, and the metrics data from CF components
+* Organize, filter and transfer data to OMS Log Analytics for deep analyzing
+* Integration with OMS Log Analytics, including default view dashboards and alert rules for monitoring the health and workload of your PCF deployment
+* Automated default configuration for the Microsoft Azure Log Analytics Nozzle
+* Additional logging to track the nozzle status, for example, slow consumer alerts; received, sent and lost events
